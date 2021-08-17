@@ -1,0 +1,50 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.21.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - phantomjs > request > hawk > hoek:
+        patched: '2021-08-17T04:45:37.974Z'
+    - phantomjs > request > hawk > boom > hoek:
+        patched: '2021-08-17T04:45:37.974Z'
+    - phantomjs > request > hawk > sntp > hoek:
+        patched: '2021-08-17T04:45:37.974Z'
+    - phantomjs > request > hawk > cryptiles > boom > hoek:
+        patched: '2021-08-17T04:45:37.974Z'
+    - grunt-contrib-qunit > grunt-lib-phantomjs > phantomjs > request > hawk > hoek:
+        patched: '2021-08-17T04:45:37.974Z'
+    - grunt-contrib-qunit > grunt-lib-phantomjs > phantomjs > request > hawk > boom > hoek:
+        patched: '2021-08-17T04:45:37.974Z'
+    - grunt-contrib-qunit > grunt-lib-phantomjs > phantomjs > request > hawk > sntp > hoek:
+        patched: '2021-08-17T04:45:37.974Z'
+    - grunt-contrib-qunit > grunt-lib-phantomjs > phantomjs > request > hawk > cryptiles > boom > hoek:
+        patched: '2021-08-17T04:45:37.974Z'
+  'npm:mime:20170907':
+    - grunt-contrib-connect > connect > send > mime:
+        patched: '2021-08-17T04:45:37.974Z'
+  'npm:negotiator:20160616':
+    - grunt-contrib-connect > connect > negotiator:
+        patched: '2021-08-17T04:45:37.974Z'
+  'npm:request:20160119':
+    - phantomjs > request:
+        patched: '2021-08-17T04:45:37.974Z'
+    - grunt-contrib-qunit > grunt-lib-phantomjs > phantomjs > request:
+        patched: '2021-08-17T04:45:37.974Z'
+  'npm:tough-cookie:20170905':
+    - phantomjs > request > tough-cookie:
+        patched: '2021-08-17T04:45:37.974Z'
+    - grunt-contrib-qunit > grunt-lib-phantomjs > phantomjs > request > tough-cookie:
+        patched: '2021-08-17T04:45:37.974Z'
+  'npm:tunnel-agent:20170305':
+    - phantomjs > request > tunnel-agent:
+        patched: '2021-08-17T04:45:37.974Z'
+    - grunt-contrib-qunit > grunt-lib-phantomjs > phantomjs > request > tunnel-agent:
+        patched: '2021-08-17T04:45:37.974Z'
+  'npm:uglify-js:20151024':
+    - grunt-groc > groc > jade > transformers > uglify-js:
+        patched: '2021-08-17T04:45:37.974Z'
+    - grunt-groc > groc > jade > with > uglify-js:
+        patched: '2021-08-17T04:45:37.974Z'
+    - grunt-groc > groc > jade > constantinople > uglify-js:
+        patched: '2021-08-17T04:45:37.974Z'
