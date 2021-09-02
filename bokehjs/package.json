@@ -2,12 +2,20 @@
   "name": "bokehjs",
   "version": "0.8.1",
   "description": "Interactive, novel data visualization",
-  "keywords": ["bokeh", "datavis", "dataviz", "visualization", "plotting", "plot", "graph"],
+  "keywords": [
+    "bokeh",
+    "datavis",
+    "dataviz",
+    "visualization",
+    "plotting",
+    "plot",
+    "graph"
+  ],
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "git://github.com/bokeh/bokeh.git"
-    },
+  },
   "devDependencies": {
     "requirejs": "^2.1.11",
     "grunt": "^0.4.4",
@@ -26,5 +34,13 @@
     "grunt-groc": "^0.4.5",
     "grunt-lesslint": "^1.1.12",
     "phantomjs": "^1.9.7"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
   }
 }
